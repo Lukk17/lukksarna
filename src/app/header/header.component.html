@@ -1,0 +1,89 @@
+<div class="bg-light border-bottom">
+  <div class="row">
+    <div class="col-md-2 d-flex">
+      <img *ngIf="expanded" class="img-fluid mx-auto my-auto d-block" src="../../assets/img/me.jpg"/>
+      <img *ngIf="!expanded"/>
+    </div>
+    <div class="col-md-10">
+      <header class="mt-2 text-center">
+        <div class="row">
+          <div class="col-md-8">
+            <h1>Lukasz Sarna</h1>
+            <h5> Software Developer</h5>
+          </div>
+          <div class="col-md-4 text-right">
+            <i class="fa fa-compress" aria-hidden="true" *ngIf="expanded" (click)="changeExpanded()"></i>
+            <i class="fa fa-expand" aria-hidden="true" *ngIf="!expanded" (click)="changeExpanded()"></i>
+          </div>
+        </div>
+      </header>
+      <div class="container-fluid mt-5" *ngIf="expanded">
+        <div class="row">
+          <div class="col-md">
+            <div class="row justify-content-md-center">
+              <div class="col-md-2">
+                <strong>Address</strong>
+              </div>
+              <div class="col-md-10">
+                Warsaw
+              </div>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="row justify-content-md-center">
+              <div class="col-md-2">
+                <strong>LinkedIn</strong>
+              </div>
+              <div class="col-md-10">
+                https://www.linkedin.com/in/luksarna
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md">
+            <div class="row justify-content-md-center">
+              <div class="col-md-2">
+                <strong>Phone</strong>
+              </div>
+              <div class="col-md-10">
+                +48 601 860 057
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="row justify-content-md-center">
+              <div class="col-md-2">
+                <strong>GitHub</strong>
+              </div>
+              <div class="col-md-10">
+                https://www.linkedin.com/in/luksarna
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="row justify-content-md-center">
+              <div class="col-md-2">
+                <strong>E-mail</strong>
+              </div>
+              <div class="col-md-10">
+                luksarna@gmail.com
+              </div>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="row justify-content-md-center">
+              <div class="col-md-2">
+                <strong></strong>
+              </div>
+              <div class="col-md-10">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

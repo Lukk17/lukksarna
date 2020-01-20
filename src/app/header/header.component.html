@@ -1,8 +1,8 @@
-<div class="bg-light border-bottom">
+<div class=" border-bottom">
   <div class="row">
-    <div class="col-md-2 d-flex">
+    <div class="col-md-2 d-flex pl-lg-4">
       <img *ngIf="expanded" class="img-fluid mx-auto my-auto d-block" src="../../assets/img/me.jpg"/>
-      <img *ngIf="!expanded"/>
+      <div *ngIf="!expanded"></div>
     </div>
     <div class="col-md-10">
       <header class="mt-2 text-center">
@@ -17,7 +17,7 @@
           </div>
         </div>
       </header>
-      <div class="container-fluid mt-5" *ngIf="expanded">
+      <div class="container-fluid mt-4 mb-2" *ngIf="expanded">
         <div class="row">
           <div class="col-md">
             <div class="row justify-content-md-center">

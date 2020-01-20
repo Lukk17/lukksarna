@@ -1,21 +1,31 @@
-<body class="maxSize">
+<body class="bodyCSS">
 
-<app-header [ngClass]="expanded ? 'header-size':'header-size-collapse'"></app-header>
+<div class="container-fluid bsss">
+  <app-header [ngClass]="expanded ? 'header-size':'header-size-collapse'"></app-header>
 
-<div [ngClass]="expanded ? 'content-size flex-grow-1 d-flex':'content-size-header-collapsed flex-grow-1 d-flex '">
-  <div class="row flex-fill flex-column flex-sm-row">
-    <div class="col-sm-3 col-md-2 sidebar flex-shrink-1 bg-dark pt-3" id="Navbar">
-      <ul class="nav flex-sm-column">
-        <li class="active"><a class="nav-link" href="/">Overview</a></li>
-        <li><a class="nav-link" href="../work">Work History</a></li>
-        <li><a class="nav-link" href="../cert">Certifications</a></li>
-        <li><a class="nav-link" href="../edu">Education</a></li>
-        <li><a class="nav-link" href="../hobby">Interests</a></li>
-      </ul>
-    </div>
-    <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 flex-grow-1 py-3 ">
+  <div [ngClass]="expanded ? 'content-size ':'content-size-header-collapsed'">
+    <nav class="navbar navbar-expand-md navbar-dark bg-primary">
+      <div class="order-0 mr-auto ml-auto">
+        <a class="navbar-brand mx-auto" href="/">Overview</a>
+      </div>
+      <div class="mx-3 order-1 mr-auto">
+        <a class="navbar-brand mx-auto" href="../work">Work History</a>
+      </div>
+      <div class="mx-3 order-2 mr-auto">
+        <a class="navbar-brand mx-auto" href="../cert">Certifications</a>
+      </div>
+      <div class="mx-3 order-3 mr-auto">
+        <a class="navbar-brand mx-auto" href="../edu">Education</a>
+      </div>
+      <div class="mx-3 order-4 mr-auto">
+        <a class="navbar-brand mx-auto" href="../hobby">Interests</a>
+      </div>
+
+    </nav>
+    <div class="container-fluid mt-3">
       <router-outlet></router-outlet>
     </div>
   </div>
 </div>
+
 </body>

@@ -1,8 +1,8 @@
-.inline{
+.inline {
   display: inline-block
 }
 
 .scrollUp {
-  cursor:pointer;
+  cursor: pointer;
   color: dodgerblue;
 }

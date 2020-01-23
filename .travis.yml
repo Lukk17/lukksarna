@@ -1,0 +1,25 @@
+dist: trusty
+sudo: required
+services:
+  - docker
+after_success:
+  - docker-compose rm -f
+  - docker-compose build --no-cache
+  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
+  - docker tag sky-view lukk17/lukksarna
+  - docker push lukk17/lukksarna
+  - docker images
+
+deploy:
+  provider: elasticbeanstalk
+  region: eu-west-2
+  app: lukksarna
+  env: Lukksarna-env
+  bucket_name: lukksarna
+  bucket_path: lukksarna
+  on:
+    branch: master
+  access_key_id:
+    secure: $AWS_ACCESS_KEY
+  secret_access_key:
+    secure: $AWS_SECRET_KEY

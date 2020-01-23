@@ -1,0 +1,10 @@
+version: "3"
+services:
+  lukksarna:
+    build:
+      dockerfile: ./Dockerfile
+      context: .
+    image: lukksarna
+    #    port HOST:CONTAINER (exposing to host)
+    ports:
+      - 80:80

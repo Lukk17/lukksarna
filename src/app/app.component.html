@@ -1,12 +1,12 @@
 <body class="bodyCSS">
 
-<div class="container-fluid bsss">
+<div class="container">
   <app-header [ngClass]="expanded ? 'header-size':'header-size-collapse'"></app-header>
 
   <div [ngClass]="expanded ? 'content-size ':'content-size-header-collapsed'">
     <nav class="navbar navbar-expand-md navbar-dark bg-primary">
       <div class="order-0 mr-auto ml-auto">
-        <a class="navbar-brand mx-auto" href="/">Overview</a>
+        <a class="navbar-brand mx-auto" href="/">About Me</a>
       </div>
       <div class="mx-3 order-1 mr-auto">
         <a class="navbar-brand mx-auto" href="../work">Work History</a>
@@ -18,11 +18,11 @@
         <a class="navbar-brand mx-auto" href="../edu">Education</a>
       </div>
       <div class="mx-3 order-4 mr-auto">
-        <a class="navbar-brand mx-auto" href="../hobby">Interests</a>
+        <a class="navbar-brand mx-auto" href="../hobby">Hobby</a>
       </div>
 
     </nav>
-    <div class="container-fluid mt-3">
+    <div class="container-fluid mt-3 pb-5">
       <router-outlet></router-outlet>
     </div>
   </div>

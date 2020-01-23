@@ -1,5 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
 .bodyCSS {
-  background-color: #F5F5F5;
+  background-color: #373737;
   min-height: 100vh;
+  color: #bfbfbf;
+}
+
+ul{
+  color: #373737;
 }

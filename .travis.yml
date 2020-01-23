@@ -7,7 +7,7 @@ after_success:
   - docker-compose rm -f
   - docker-compose build --no-cache
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
-  - docker tag sky-view lukk17/lukksarna
+  - docker tag lukksarna lukk17/lukksarna
   - docker push lukk17/lukksarna
   - docker images
 

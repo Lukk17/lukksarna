@@ -1,4 +1,4 @@
-language: java
+language: generic
 dist: trusty
 sudo: required
 services:

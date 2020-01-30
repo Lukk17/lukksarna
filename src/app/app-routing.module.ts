@@ -6,11 +6,12 @@ import {CertComponent} from "./cert/cert.component";
 import {EduComponent} from "./edu/edu.component";
 import {HobbyComponent} from "./hobby/hobby.component";
 import {SkillsComponent} from "./skills/skills.component";
+import {ProjectComponent} from "./project/project.component";
 
 const routes: Routes = [
-  {path: '', redirectTo: "/overview", pathMatch: "full"},
-  {path: 'overview', component: OverviewComponent},
+  {path: '', pathMatch: "full", component: OverviewComponent},
   {path: 'work', component: WorkComponent},
+  {path: 'project', component: ProjectComponent},
   {path: 'skills', component: SkillsComponent},
   {path: 'cert', component: CertComponent},
   {path: 'edu', component: EduComponent},

@@ -12,8 +12,4 @@ export class OverviewComponent implements OnInit {
   ngOnInit() {
 
   }
-
-  scrollUp() {
-    window.scroll(0,0);
-  }
 }

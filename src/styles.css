@@ -8,3 +8,13 @@
 ul {
   color: #373737;
 }
+
+.second-element {
+  color: #1b1e21;
+  background-color: #bfbfbf !important;
+}
+
+.first-element {
+  color: #1b1e21;
+  background-color: #e0e2e4 !important;
+}

@@ -5,3 +5,9 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 <hr>
 
 About me ;)
+
+Compile with:
+
+```npm run build```
+
+Find compiled files in ```./dist``` folder

@@ -19,6 +19,10 @@ Update Node to latest version, commit each change (Angular update require it)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.2.3.
 
+If any conflicts with dependency, update it in `package.json` file.  
+Version od dependencies can be found:  
+https://www.npmjs.com/
+
 ```
 cmd /C "set "NG_DISABLE_VERSION_CHECK=1" && npx @angular/cli@8 update @angular/cli@8 @angular/core@8"
 ```

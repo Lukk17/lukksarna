@@ -60,6 +60,11 @@ ng update
 ```
 ng update @angular/core@12 @angular/cli@12
 ```
+if problem with dependency run:
+```
+npm install --legacy-peer-deps
+```
+and continue:
 ```
 ng update
 ```

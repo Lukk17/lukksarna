@@ -13,6 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "aot": true,
             "outputPath": "dist/lukksarna",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -54,21 +55,30 @@
                   "type": "initial",
                   "maximumWarning": "2mb",
                   "maximumError": "5mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb"
                 }
               ]
-            }
-          }
+            },
+            "development": {}
+          },
+          "defaultConfiguration": "production"
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "lukksarna:build"
           },
           "configurations": {
             "production": {
               "browserTarget": "lukksarna:build:production"
+            },
+            "development": {
+              "browserTarget": "lukksarna:build:development"
             }
-          }
+          },
+          "defaultConfiguration": "development"
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
@@ -115,14 +125,17 @@
         "e2e": {
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
-            "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "lukksarna:serve"
+            "protractorConfig": "e2e/protractor.conf.js"
           },
           "configurations": {
             "production": {
               "devServerTarget": "lukksarna:serve:production"
+            },
+            "development": {
+              "devServerTarget": "lukksarna:serve:development"
             }
-          }
+          },
+          "defaultConfiguration": "development"
         },
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
@@ -136,5 +149,7 @@
       }
     }
   },
-  "defaultProject": "lukksarna"
+  "cli": {
+    "analytics": false
+  }
 }

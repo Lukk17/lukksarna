@@ -1,50 +1,51 @@
-<div class="row m-5"></div>
+<div class="row m-3"></div>
+
 <ul class="list-group list-group-flush">
-  <li class="list-group-item mb-2 first-element">
-    <div class="container-fluid">
-      <div class="row mt-5">
-        <div class="col-md-2">
-          <h5 class="font-weight-bold">12.2020</h5>
+    <div *ngFor="let cert of certs">
+
+        <li class="list-group-item mb-2 first-element">
+            <div class="container-fluid">
+                <div class="row mt-1">
+                    <div class="col-md-2 justify-content-center align-self-center">
+                        <h5 class="font-weight-bold">{{cert.date}}</h5>
+                    </div>
+                    <div class="col-md-7">
+                        <div class="justify-content-center align-self-center">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-lg">
+                                        <div class="col-lg-9">
+                                            <h4 class="font-weight-bold">{{cert.name}}</h4>
+                                            <p class="font-italic">{{cert.issuer}}</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 justify-content-center align-self-center">
+                        <div class="row justify-content-center align-self-center" *ngIf="cert.link != ''">
+                            <a target="_blank" rel="noopener noreferrer"
+                               href="{{cert.link}}">
+                                Link to Certificate</a>
+                        </div>
+                        <div class="row m-2 justify-content-center align-self-center">
+                            <button type="button" class="btn btn-success" aria-hidden="true"
+                                    *ngIf="!cert.expanded" (click)="changeExpanded(cert)">
+                                Show Certificate
+                            </button>
+                            <button type="button" class="btn btn-secondary" aria-hidden="true"
+                                    *ngIf="cert.expanded" (click)="changeExpanded(cert)">
+                                Hide Certificate
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li>
+        <div *ngIf="cert.expanded">
+            <img class="img-fluid mx-auto my-auto d-block" src="{{cert.image}}"/>
         </div>
-        <div class="col-md-10">
-          <h4 class="font-weight-bold"> Test Driven Development </h4>
-          <p class="font-italic">Bottega IT Minds</p>
-        </div>
-      </div>
+        <div class="row m-3"></div>
     </div>
-  </li>
-  <img class="img-fluid mx-auto my-auto d-block" src="../../assets/img/TDD.jpeg"/>
-
-  <div class="row m-3"></div>
-
-  <li class="list-group-item first-element">
-    <div class="container-fluid">
-      <div class="row mt-5">
-        <div class="col-md-2">
-          <h5 class="font-weight-bold">11.2020</h5>
-        </div>
-        <div class="col-md-10">
-          <h4 class="font-weight-bold"> Security PWNing Conference 2019 </h4>
-          <p class="font-italic"> PWN security conference</p>
-        </div>
-      </div>
-    </div>
-  </li>
-
-  <div class="row m-3"></div>
-
-  <li class="list-group-item mb-2 first-element">
-    <div class="container-fluid">
-      <div class="row mt-5">
-        <div class="col-md-2">
-          <h5 class="font-weight-bold">02.2018</h5>
-        </div>
-        <div class="col-md-10">
-          <h4 class="font-weight-bold "> Certificate of Completion Java Developer Bootcamp </h4>
-          <p class="font-italic"> Coderslab </p>
-        </div>
-      </div>
-    </div>
-  </li>
-  <img class="img-fluid mx-auto my-auto d-block" src="../../assets/img/coderslab.jpg"/>
 </ul>

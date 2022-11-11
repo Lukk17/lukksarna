@@ -1,100 +1,113 @@
 <div class="row">
-  <!--                             PHOTO                                       -->
-  <div class="col-lg-2 d-flex pl-lg-4 mb-1">
-    <img *ngIf="expanded" class="img-fluid mx-auto my-auto d-block" src="../../assets/img/me.jpg"/>
-    <div *ngIf="!expanded"></div>
-  </div>
-
-  <div class="col-lg-10">
-    <!--                             NAME, SURNAME, WORK POSITION                                       -->
-    <header class="mt-2 text-center">
-      <div class="row">
-        <div class="col-lg-8">
-          <h1>Lukk Sarna</h1>
-          <h5> Software Developer</h5>
-        </div>
-        <div class="col-lg-4 text-right">
-          <i class="fa fa-compress" aria-hidden="true" *ngIf="expanded" (click)="changeExpanded()"></i>
-          <i class="fa fa-expand" aria-hidden="true" *ngIf="!expanded" (click)="changeExpanded()"></i>
-        </div>
-      </div>
-    </header>
-
-    <div class="container-fluid mt-4 mb-2" *ngIf="expanded">
-      <div class="row">
-        <!--                             CONTACT INFO                                       -->
-        <div class="col-md-6">
-
-          <div class="col-lg">
-            <div class="row justify-content-lg-center">
-              <div class="col-lg-3">
-                <strong>Address:</strong>
-              </div>
-              <div class="col-lg-9">
-                Warsaw, Poland
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg">
-            <div class="row justify-content-lg-center">
-              <div class="col-lg-3">
-                <strong>Phone:</strong>
-              </div>
-              <div class="col-lg-9">
-                +48 601 860 057
-              </div>
-            </div>
-          </div>
-
-          <div class="col">
-            <div class="row justify-content-lg-center">
-              <div class="col-lg-3">
-                <strong>E-mail:</strong>
-              </div>
-              <div class="col-lg-9">
-                luksarna@gmail.com
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!--                             SOCIAL LINKS                                       -->
-        <div class="col-md-6">
-
-          <div class="col-lg">
-            <div class="row justify-content-lg-center">
-              <div class="col-lg-3">
-                <strong>LinkedIn:</strong>
-              </div>
-              <div class="col-lg-9">
-                <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/luksarna">luksarna</a>
-              </div>
-            </div>
-          </div>
-
-          <div class="col">
-            <div class="row justify-content-lg-center">
-              <div class="col-lg-3">
-                <strong>GitHub:</strong>
-              </div>
-              <div class="col-lg-9">
-                <a target="_blank" rel="noopener noreferrer" href="https://github.com/Lukk17"> Lukk17</a>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg">
-          <div class="row justify-content-lg-center">
-            <div class="col-lg-3">
-              <strong></strong>
-            </div>
-            <div class="col-lg-9">
-            </div>
-          </div>
-        </div>
-      </div>
+    <!--                             PHOTO                                       -->
+    <div class="col-lg-2 d-flex pl-lg-4 mb-1">
+        <img *ngIf="expanded" class="img-fluid mx-auto my-auto d-block" src="../../assets/img/me.jpg"/>
+        <div *ngIf="!expanded"></div>
     </div>
-  </div>
+
+    <div class="col-lg-10">
+        <!--                             NAME, SURNAME, WORK POSITION                                       -->
+        <header class="mt-2 text-center">
+            <div class="row">
+                <div class="col-lg-8">
+                    <h1>Lukk Sarna</h1>
+                    <h5> Software Developer</h5>
+                </div>
+                <div class="col-lg-4 text-right">
+                    <i class="fa fa-compress" aria-hidden="true" *ngIf="expanded" (click)="changeExpanded()"></i>
+                    <i class="fa fa-expand" aria-hidden="true" *ngIf="!expanded" (click)="changeExpanded()"></i>
+                </div>
+            </div>
+        </header>
+
+        <div class="container-fluid mt-4 mb-2" *ngIf="expanded">
+            <div class="row">
+                <!--                             CONTACT INFO                                       -->
+                <div class="col-md-6">
+
+                    <div class="col-lg">
+                        <div class="row justify-content-lg-center">
+                            <div class="col-lg-3">
+                                <strong>Address:</strong>
+                            </div>
+                            <div class="col-lg-9">
+                                Warsaw, Poland
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg">
+                        <div class="row justify-content-lg-center">
+                            <div class="col-lg-3">
+                                <strong>Phone:</strong>
+                            </div>
+                            <div class="col-lg-9">
+                                +48 601 860 057
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="row justify-content-lg-center">
+                            <div class="col-lg-3">
+                                <strong>E-mail:</strong>
+                            </div>
+                            <div class="col-lg-9">
+                                luksarna@gmail.com
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--                             SOCIAL LINKS                                       -->
+                <div class="col-md-6">
+
+                    <div class="col-lg">
+                        <div class="row justify-content-lg-center">
+                            <div class="col-lg-3">
+                                <strong>LinkedIn:</strong>
+                            </div>
+                            <div class="col-lg-9">
+                                <a target="_blank" rel="noopener noreferrer"
+                                   href="https://www.linkedin.com/in/luksarna">luksarna</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="row justify-content-lg-center">
+                            <div class="col-lg-3">
+                                <strong>GitHub:</strong>
+                            </div>
+                            <div class="col-lg-9">
+                                <a target="_blank" rel="noopener noreferrer" href="https://github.com/Lukk17">
+                                    Lukk17</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="row justify-content-lg-center">
+                            <div class="col-lg-3">
+                                <strong>CV:</strong>
+                            </div>
+                            <div class="col-lg-9">
+                                <a href="../../assets/pdf/Lukasz_Sarna_Resume.pdf">Get</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg">
+                    <div class="row justify-content-lg-center">
+                        <div class="col-lg-3">
+                            <strong></strong>
+                        </div>
+                        <div class="col-lg-9">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>

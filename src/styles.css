@@ -1,20 +1,56 @@
 /* You can add global styles to this file, and also import other style files */
+:root {
+    --text-color: #bfbfbf;
+    --background-color: #373737;
+    --button-color: #008001;
+    --navbar-color: #007bff;
+}
+
 .bodyCSS {
-  background-color: #373737;
-  min-height: 100vh;
-  color: #bfbfbf;
+    background-color: var(--background-color);
+    min-height: 100vh;
+    color: var(--text-color);
+}
+
+.navTextColor {
+    /*color: var(--background-color)!important;*/
+    /*color: var(--text-color) !important;*/
+    color: #f2f2f2 !important;
+}
+
+.navStyle {
+    /*background-color: #007bff;*/
+    background-color: var(--navbar-color);
+    border-radius: 25px;
+}
+
+.cardElement {
+    color: var(--background-color);
+    background-color: #e0e2e4 !important;
+    font-weight: bold;
+    /*background-color: var(--text-color) !important;*/
+}
+
+.buttonStyle {
+    background-color: var(--button-color) !important;
+    color: var(--text-color) !important;
 }
 
 ul {
-  color: #373737;
+    counter-reset: index;
+    padding: 0;
 }
 
-.second-element {
-  color: #1b1e21;
-  background-color: #bfbfbf !important;
+.no-bullets {
+    list-style-type: none!important; /* Remove bullets */
 }
 
-.first-element {
-  color: #1b1e21;
-  background-color: #e0e2e4 !important;
+/* List element */
+li {
+    counter-increment: index;
+    display: flex;
+    align-items: center;
+    padding: 12px 0;
+    box-sizing: border-box;
 }
+

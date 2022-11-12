@@ -1,43 +1,42 @@
 <body class="bodyCSS">
 
 <div class="container">
-  <app-header [ngClass]="expanded ? 'header-size':'header-size-collapse'"></app-header>
+    <app-header [ngClass]="expanded ? 'header-size':'header-size-collapse'"></app-header>
 
-  <div [ngClass]="expanded ? 'content-size ':'content-size-header-collapsed'">
-    <nav class="navbar navbar-expand-md navbar-dark bg-primary">
-      <div class=" order-1 mr-auto ml-auto">
-        <a class="navbar-brand mx-auto" href="/"
-           routerLink="/" routerLinkActive="activeLink" [routerLinkActiveOptions]="{exact: true}">
-          About Me
-        </a>
-      </div>
-      <div class="mx-3 order-1 mr-auto" routerLinkActive="activeLink">
-        <a class="navbar-brand mx-auto" href="../skills" routerLink="/skills">Skills</a>
-      </div>
-      <div class="mx-3 order-1 mr-auto" routerLinkActive="activeLink">
-        <a class="navbar-brand mx-auto" href="../work" routerLink="/work">Experience</a>
-      </div>
-      <div class="mx-3 order-1 mr-auto" routerLinkActive="activeLink">
-        <a class="navbar-brand mx-auto" href="../project" routerLink="/project">Projects</a>
-      </div>
-      <div class="mx-3 order-2 mr-auto" routerLinkActive="activeLink">
-        <a class="navbar-brand mx-auto" href="../cert" routerLink="/cert">Certifications</a>
-      </div>
-      <div class="mx-3 order-3 mr-auto" routerLinkActive="activeLink">
-        <a class="navbar-brand mx-auto" href="../edu" routerLink="/edu">Education</a>
-      </div>
-      <div class="mx-3 order-4 mr-auto" routerLinkActive="activeLink">
-        <a class="navbar-brand mx-auto" href="../hobby" routerLink="/hobby">Hobby</a>
-      </div>
-    </nav>
+    <div class="row m-1"></div>
 
-    <div class="container-fluid mt-3 pb-5">
-      <router-outlet></router-outlet>
+    <div [ngClass]="expanded ? 'content-size ':'content-size-header-collapsed'">
+        <nav class="navbar navbar-expand-md navbar-dark navStyle">
+            <div class="mx-3 order-1 mr-auto" routerLinkActive="activeLink" [routerLinkActiveOptions]="{exact: true}">
+                <a class="navbar-brand mx-auto navTextColor" routerLink="/" href="/">About Me</a>
+            </div>
+            <div class="mx-3 order-1 mr-auto" routerLinkActive="activeLink">
+                <a class="navbar-brand mx-auto navTextColor" href="../skills" routerLink="/skills">Skills</a>
+            </div>
+            <div class="mx-3 order-1 mr-auto" routerLinkActive="activeLink">
+                <a class="navbar-brand mx-auto navTextColor" href="../work" routerLink="/work">Experience</a>
+            </div>
+            <div class="mx-3 order-1 mr-auto" routerLinkActive="activeLink">
+                <a class="navbar-brand mx-auto navTextColor" href="../project" routerLink="/project">Projects</a>
+            </div>
+            <div class="mx-3 order-2 mr-auto" routerLinkActive="activeLink">
+                <a class="navbar-brand mx-auto navTextColor" href="../cert" routerLink="/cert">Certifications</a>
+            </div>
+            <div class="mx-3 order-3 mr-auto" routerLinkActive="activeLink">
+                <a class="navbar-brand mx-auto navTextColor" href="../edu" routerLink="/edu">Education</a>
+            </div>
+            <div class="mx-3 order-4 mr-auto" routerLinkActive="activeLink">
+                <a class="navbar-brand mx-auto navTextColor" href="../hobby" routerLink="/hobby">Hobby</a>
+            </div>
+        </nav>
+
+        <div class="container-fluid mt-3 pb-5">
+            <router-outlet></router-outlet>
+        </div>
+
     </div>
 
-  </div>
-
-  <app-footer></app-footer>
+    <app-footer></app-footer>
 
 </div>
 

@@ -7,9 +7,10 @@ About me ;)
 
 Compile with:
 
-```npm run build```
+```npm run build --prod```
 
-Find compiled files in ```./dist``` folder
+Find compiled files in ```./dist``` folder.  
+Use the `--prod` flag for a production build.
 
 Symbols meaning before version number in `package.json`:  
 example version: `1.0.2`  
@@ -17,7 +18,17 @@ example version: `1.0.2`
 `^1.0.2` - install this version or latest minor, e.g. 1.1.0
 
 <hr>
-Update history:  
+
+### Color palette
+
+background `#373737`  
+main text: `#bfbfbf`  
+navbar color: `#008001`   
+card color:  `#bfbfbf`
+
+<hr>
+
+### Update history:  
 
 Update Node to latest version, commit each change (Angular update require it)
 

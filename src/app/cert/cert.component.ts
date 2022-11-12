@@ -10,6 +10,7 @@ import {Cert} from './cert.model';
 export class CertComponent implements OnInit {
 
     public certs;
+    public expanded;
 
     constructor(private resizeService: ResizeService) {
         this.certs = [
@@ -44,7 +45,6 @@ export class CertComponent implements OnInit {
         ];
     }
 
-    public expanded;
 
     ngOnInit() {
         this.expanded = this.resizeService.expanded;
@@ -53,13 +53,5 @@ export class CertComponent implements OnInit {
 
     changeExpanded(obj) {
         obj.expanded = !obj.expanded;
-        // this.expanded = !this.expanded;
-        // this.resizeService.changeExpanded(this.expanded);
     }
-
-
-}
-
-export class Certificate {
-    name: String;
 }

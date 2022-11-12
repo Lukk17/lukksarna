@@ -13,6 +13,10 @@ import {HobbyComponent} from './hobby/hobby.component';
 import {SkillsComponent} from './skills/skills.component';
 import {ProjectComponent} from './project/project.component';
 import {FooterComponent} from './footer/footer.component';
+import {AmelcoComponent} from './work/responsibilities/amelco/amelco.component';
+import {SamsungComponent} from './work/responsibilities/samsung/samsung.component';
+import {CfComponent} from './work/responsibilities/cf/cf.component';
+import {LuxoftComponent} from './work/responsibilities/luxoft/luxoft.component';
 
 @NgModule({
     declarations: [
@@ -25,7 +29,11 @@ import {FooterComponent} from './footer/footer.component';
         HobbyComponent,
         SkillsComponent,
         ProjectComponent,
-        FooterComponent
+        FooterComponent,
+        AmelcoComponent,
+        SamsungComponent,
+        CfComponent,
+        LuxoftComponent
     ],
     imports: [
         BrowserModule,
